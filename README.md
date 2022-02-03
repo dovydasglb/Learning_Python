@@ -1,3 +1,2 @@
-# Demo_changes
-This repository contains some Python learning exercises
-## some changes
+#Learning_Python
+This repository contains Python learning exercises
