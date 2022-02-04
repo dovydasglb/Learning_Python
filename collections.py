@@ -26,6 +26,7 @@ my_set = {'a', 'a', 3, True, 2.0}
 print(my_set)
 print(type(my_set))
 # can also be created using:
+# noinspection PySetFunctionToLiteral
 my_set = set(('a', 'a', 3, True, 2.0))
 print(my_set)
 print(type(my_set))
@@ -43,6 +44,6 @@ my_dictionary = {
 print(my_dictionary)
 print(type(my_dictionary))
 # can also be created using (note parentheses):
-my_dictionary = dict({1:2020, 2:'September', 'brand':'Apple', 'product':'iPhone', 'current model':False})
+my_dictionary = dict({1: 2020, 2: 'September', 'brand': 'Apple', 'product': 'iPhone', 'current model': False})
 print(my_dictionary)
 print(type(my_dictionary))
