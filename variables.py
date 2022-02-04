@@ -8,6 +8,10 @@ print(c)
 d = True        # is a boolean
 print(d)
 
+# Each variable is a reference to a section in memory that is reserved for storing data:
+print(id(d))
+print(hex(id(d)))
+
 # Declaring string variables:
 x = 'a string'
 print(x)
@@ -55,3 +59,34 @@ print(x)
 print(y)
 print(z)
 
+# String variables can be combined using operator plus operator:
+x = 'this'
+y = ' was combined together'
+z = x + y
+print(z)
+# However, math operators used on numerical variables will instead carry out the math:
+x = 5
+y = 3
+print(x+y)
+
+# All the variables created outside a function are global:
+x = 'x is global'
+# and global variables can be called upon within the function:
+
+
+def my_function():
+    return x
+
+
+print(my_function())
+# However, variables declared within functions are local to that function. To make them global use:
+
+
+def my_function():
+    global x
+    x = 5
+
+
+my_function()
+print(x)
+# Order for variables is as follows: built-in>global>local
