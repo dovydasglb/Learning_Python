@@ -76,3 +76,20 @@ my_list = [1, 2, 3, 4, 5, 6]
 my_list.pop()
 print(my_list)
 
+# We can also remove all items from the list to make it empty:
+my_list = [1, 2, 3, 4, 5, 6]
+my_list.clear()
+print(my_list)
+
+# To create a copy of a list use:
+my_list = [1, 2, 3, 4, 5, 6]
+my_list2 = my_list.copy()
+print(my_list2)
+# Or alternatively use:
+my_list3 = list(my_list)
+print(my_list3)
+# This is in contrast to assigning a list to a new variable as this would just reference original list:
+my_list = [1, 2, 3, 4, 5, 6]
+my_list2 = my_list
+my_list.clear()
+print(my_list2)
